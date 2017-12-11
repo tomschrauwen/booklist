@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tom.mybookslist" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddBookActivity"
+            android:label="@string/title_activity_add_book"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tom.mybookslist.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ModifyGameActivity"
+            android:label="@string/title_activity_modify_game"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tom.mybookslist.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ModifyBookActivity"
+            android:label="@string/title_activity_modify_book"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tom.mybookslist.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BookDetailsActivity"
+            android:label="@string/title_activity_book_details"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tom.mybookslist.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
